@@ -1,7 +1,14 @@
-<h1> Dirty Cocktails</h1>
-<h1> Done Dirt Cheap! </h1>
+<div class="home-banner" style="background-image: url(assets/cocktails_banner.jpeg)">
+  <h1> Dirty Cocktails</h1>
+  <h1> Done Dirt Cheap! </h1>
+</div>
 
-<% @cocktails.each do |cocktail| %>
-<div id = "cocktails"> <%= link_to(cocktail.name, cocktail_path(cocktail)) %> </div>
-<% end %>
+<div class="container">
+  <div class = "cocktail-cards">
+    <div id="image" style="background-image: url(assets/cocktails_banner.jpeg)"></div>
+    <% @cocktails.each do |cocktail| %>
+        <div class = "cocktail-card"> <%= link_to(cocktail.name, cocktail_path(cocktail)) %> </div>
+    <% end %>
+  </div>
 <h5> <%= link_to("create new cocktail", new_cocktail_path)%></h5>
+</div>

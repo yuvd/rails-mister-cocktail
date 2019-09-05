@@ -1,9 +1,34 @@
 // Specific CSS for your home-page
 h1 {
   color: palevioletred;
+  size: 50px;
 }
 
 body {
   text-align: center;
   padding-bottom: 50px;
+}
+
+.cocktail-cards {
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.cocktail-card {
+ display: flex;
+ justify-content: center;
+ background-color: white;
+ margin-left: 0;
+ margin-right: 0;
+
+ #image{
+   height: 100%;
+   width: 50px;
+ }
+
+ a {
+   padding: 0;
+ }
 }
