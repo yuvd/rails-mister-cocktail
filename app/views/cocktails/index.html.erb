@@ -1,0 +1,7 @@
+<h1> Dirty Cocktails</h1>
+<h1> Done Dirt Cheap! </h1>
+
+<% @cocktails.each do |cocktail| %>
+<div id = "cocktails"> <%= link_to(cocktail.name, cocktail_path(cocktail)) %> </div>
+<% end %>
+<h5> <%= link_to("create new cocktail", new_cocktail_path)%></h5>
